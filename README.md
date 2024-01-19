@@ -38,5 +38,5 @@ Basicamente o projeto foi capaz de realizar as seguintes tarefas:
 ## 🚀 Link do site copie e cole no navegador!
 
 ```
-https://dev-oasis-tkgf.vercel.app/
+https://q-rcode-generator-ten.vercel.app/
 ```
