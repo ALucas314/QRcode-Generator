@@ -48,7 +48,7 @@ body {
     z-index: 2;
     width: 100%;
     max-width: 310px;
-    background: #fff;
+    background-color: rgba(255, 255, 255, 0.733);
     border-radius: 7px;
     padding: 16px 25px;
     transition: height 0.2s ease;
@@ -75,6 +75,7 @@ header p {
     border: none;
     outline: none;
     border-radius: 5px;
+    background-color: rgba(230, 230, 230, 0.5);
 }
 
 .form button {
@@ -120,7 +121,7 @@ header p {
         min-height: 100vh;
         overflow: hidden;
         background: linear-gradient(45deg, rgb(7, 15, 53), rgb(12, 12, 197));
-        background-image: url('/assets/img/QR\ Code\ Generator\ \(7\).png');
+        background-image: url('/assets/img/QR\ Code\ Generator\ \(1\).png');
         background-size: 192vh;
         background-position: center;
         background-attachment: fixed;
