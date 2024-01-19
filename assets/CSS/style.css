@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(45deg, rgb(7, 15, 53), rgb(12, 12, 197));
+    background-image: url('/assets/img/QR\ Code\ Generator.png');
+    background-size: 192vh;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+@media only screen and (max-width: 1562px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        overflow: hidden;
+        background: linear-gradient(45deg, rgb(7, 15, 53), rgb(12, 12, 197));
+        background-image: url('/assets/img/QR\ Code\ Generator\ \(4\).png');
+        background-size: 192vh;
+        background-position: center;
+        background-attachment: fixed;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1214px) {
+    .qr-code-container {
+        padding: 20px;
+    }
+}
+
+.wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 310px;
+    background: #fff;
+    border-radius: 7px;
+    padding: 16px 25px;
+    transition: height 0.2s ease;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+header p {
+    font-size: 16px;
+    color: #474747;
+}
+
+.wrapper .form {
+    margin: 20px 0 25px;
+}
+
+.form :where(input, button) {
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.form button {
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 17px;
+    background: linear-gradient(45deg, rgb(7, 15, 53), rgb(12, 12, 197));
+}
+
+.wrapper .qr-code {
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    padding: 33px 0;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+}
+
+.wrapper.active .qr-code {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.05s ease;
+}
+
+.wrapper.open {
+    height: 700px;
+}
+
+.wrapper.active .qr-code {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.05s ease;
+    z-index: 2;
+}
+
+@media only screen and (max-width: 1246px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        overflow: hidden;
+        background: linear-gradient(45deg, rgb(7, 15, 53), rgb(12, 12, 197));
+        background-image: url('/assets/img/QR\ Code\ Generator\ \(7\).png');
+        background-size: 192vh;
+        background-position: center;
+        background-attachment: fixed;
+        margin: 0;
+    }
+}
+
+
+
+/* Adicione regra de mídia para telas menores que 400px */
+@media only screen and (max-width: 400px) {
+    .qr-code-container {
+        background: none; /* Remove a imagem de fundo */
+    }
+}
